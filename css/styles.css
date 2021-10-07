@@ -1,0 +1,242 @@
+
+/****************************General y barra de navegacion********************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: 115vh;
+    background-color: #151414;
+}
+.maicol{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+ 
+}
+
+.navbar{
+    display: flex;
+    padding: 2em;
+    position: relative;
+
+}
+
+.brand h2{
+    color: #cf7520;
+    margin-left: 2.8em;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu, li {
+    list-style: none;
+}
+
+.menu, a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+/****************************Contenido principal********************************/
+.main{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.container-main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.info-content{
+    grid-column: 1/6;
+    margin-top: 4em;
+}
+
+.title, h1{
+    font-size: 4em;
+}
+
+h5{
+    font-size: 1.5em;
+}
+
+h3, h1, h5, p{
+    color: #fff;
+}
+
+
+.btn-buy{
+    padding: 10px 30px;
+    margin-top: 1em;
+    background: none;
+    border: solid 1px #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+   
+}
+.btn-buy:hover{
+    background-color: #cf7520;
+}
+
+.arrow i{
+    font-size: 3em;
+    margin-top: 1em;
+    cursor: pointer;
+    color: #cf7520;
+    animation-name: arrow-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow-animation {
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(100%);
+    }
+    
+}
+
+.producto{
+    grid-column: 10/10;
+    width: 500px;
+    z-index: 1;
+    margin-top: -12em;
+    margin-right: -14em;
+}
+
+
+
+/****************************Nuestros productos********************************/
+.our-productos{
+    width: 100%;
+}
+
+.our-productos{
+    padding: 5em;
+}
+.our-productos h2{
+    font-size: 2em;
+}
+
+.our-productos{
+    font-size: 3 em;
+    text-align: center;
+    padding-top: 3em;
+}
+
+.divider{
+    width: 100px;
+    height: 5px;
+    background-color: #cf7520;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+.products-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.product_info{
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.product_info h3{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+
+}
+
+.product_info h3,
+.product_info p {
+    color: #151414;
+}
+
+.product_img{
+    height: 300px;
+    background-image: url(/img/Razer-Iskur-gaming-chair.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.product_img2{
+    height: 300px;
+    background-image: url(/img/Gaming-Chair-Gear-Patrol-Lead-Full.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.product_img3{
+    height: 300px;
+    background-image: url(/img/6VVqgTcvHdJuou67bUGW4g-1200-80.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.product_img4{
+    height: 300px;
+    background-image: url(/img/3803382-iskurthumb1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/****************************************PIE DE PAGINA****************************************************/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+    padding: 2em;
+    background-color: #151414;
+}
+.footer h2{
+    font-size: 3em;
+    color: #fff;
+
+}
+
+.footer h5{
+    font-size: 1.5em;
+    color: #cf7520;text-align: center;
+}
+
+.social_networks{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 0.5em;
+}
+
+.social_networks{
+    font-size: 1.2em;
+    color: #cf7520;
+}
